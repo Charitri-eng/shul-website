@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shul Ventures | Smart Business Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#f4f6ff;color:#333;scroll-behavior:smooth;}
+#loader{position:fixed;width:100%;height:100%;background:white;display:flex;align-items:center;justify-content:center;z-index:9999;}
+.loader-circle{width:50px;height:50px;border:5px solid #eee;border-top:5px solid #3949ab;border-radius:50%;animation:spin 1s linear infinite;}
+@keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+header{background:white;box-shadow:0 2px 10px rgba(0,0,0,.08);position:sticky;top:0;z-index:100;}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 10%;}
+.logo{font-size:24px;font-weight:700;color:#1a237e;}
+nav ul{display:flex;gap:30px;list-style:none;}
+nav a{text-decoration:none;color:#333;font-weight:500;}
+.hero{height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:20px;background:linear-gradient(120deg,#1a237e,#5c6bc0);}
+.hero h1{font-size:55px;margin-bottom:15px;}
+.hero p{font-size:20px;margin-bottom:25px;}
+.btn{background:#ff9800;padding:14px 32px;border:none;border-radius:30px;color:white;font-size:16px;cursor:pointer;transition:.3s;}
+.btn:hover{transform:scale(1.05);}
+.services{padding:100px 10%;text-align:center;}
+.services h2{font-size:40px;margin-bottom:60px;color:#1a237e;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
+.card{background:rgba(255,255,255,0.6);backdrop-filter:blur(10px);padding:35px;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,.1);transition:.4s;opacity:0;transform:translateY(40px);}
+.card.show{opacity:1;transform:translateY(0);}
+.card:hover{transform:translateY(-10px);}
+.icon{font-size:40px;margin-bottom:15px;}
+.stats{background:#1a237e;color:white;padding:80px 10%;text-align:center;}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;}
+.stat h3{font-size:42px;}
+.about{padding:100px 10%;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
+.about img{width:100%;border-radius:12px;}
+.about h2{font-size:40px;color:#1a237e;margin-bottom:20px;}
+.contact{padding:90px 10%;background:#eef1ff;text-align:center;}
+.contact h2{font-size:36px;margin-bottom:30px;}
+form{max-width:500px;margin:auto;}
+input,textarea{width:100%;padding:14px;margin:10px 0;border-radius:8px;border:1px solid #ccc;}
+footer{background:#1a237e;color:white;padding:40px 10%;}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;}
+footer h3{margin-bottom:10px;}
+.social{display:flex;gap:15px;margin-top:10px;}
+.social span{background:white;color:#1a237e;padding:8px 12px;border-radius:50%;cursor:pointer;}
+@media(max-width:768px){
+.hero h1{font-size:35px;}
+.about{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<div id="loader"><div class="loader-circle"></div></div>
+<header>
+<nav>
+<div class="logo">Shul Ventures</div>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+<section class="hero">
+<div>
+<h1>Empowering Businesses With Smart Solutions</h1>
+<p>IT Training • Pest Control • Manufacturing • Facility Services</p>
+<button class="btn">Explore Services</button>
+</div>
+</section>
+<section class="services" id="services">
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card"><div class="icon">💻</div><h3>IT Training</h3><p>Industry-ready training programs with practical learning.</p></div>
+<div class="card"><div class="icon">🐜</div><h3>Pest Control</h3><p>Safe and eco-friendly pest management solutions.</p></div>
+<div class="card"><div class="icon">🏭</div><h3>Manufacturing</h3><p>Industrial fabrication and manufacturing services.</p></div>
+<div class="card"><div class="icon">🧹</div><h3>Housekeeping</h3><p>Professional facility cleaning and maintenance.</p></div>
+<div class="card"><div class="icon">⚡</div><h3>Electrical Services</h3><p>Reliable electrical installations and repairs.</p></div>
+<div class="card"><div class="icon">🌿</div><h3>Gardening</h3><p>Landscape design and garden maintenance.</p></div>
+</div>
+</section>
+<section class="stats">
+<div class="stat-grid">
+<div class="stat"><h3>500+</h3><p>Happy Clients</p></div>
+<div class="stat"><h3>10+</h3><p>Services</p></div>
+<div class="stat"><h3>5+</h3><p>Years Experience</p></div>
+<div class="stat"><h3>100+</h3><p>Projects Completed</p></div>
+</div>
+</section>
+<section class="about" id="about">
+<div>
+<h2>About Shul Ventures</h2>
+<p>Shul Ventures provides multi-industry services including IT training, pest control, manufacturing and facility management.</p>
+<p>Our mission is to deliver reliable and innovative solutions that help businesses grow faster.</p>
+</div>
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+</section>
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<form>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Email">
+<textarea rows="4" placeholder="Message"></textarea>
+<button class="btn">Send Message</button>
+</form>
+</section>
+<footer>
+<div class="footer-grid">
+<div>
+<h3>Shul Ventures</h3>
+<p>Smart business solutions across multiple industries.</p>
+</div>
+<div>
+<h3>Services</h3>
+<p>IT Training</p>
+<p>Pest Control</p>
+<p>Manufacturing</p>
+</div>
+<div>
+<h3>Follow Us</h3>
+<div class="social"><span>F</span><span>I</span><span>L</span></div>
+</div>
+</div>
+</footer>
+<script>
+window.onload=function(){document.getElementById("loader").style.display="none"}
+const cards=document.querySelectorAll(".card")
+window.addEventListener("scroll",()=>{
+cards.forEach(card=>{
+const top=card.getBoundingClientRect().top
+if(top<window.innerHeight-50){card.classList.add("show")}
+})
+})
+</script>
+</body>
+</html>
